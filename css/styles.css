@@ -84,13 +84,13 @@ body {
       letter-spacing: -0.03em; }
   /* line 30, ../../source_sass/_intro.scss */
   #intro .video-container {
-    /*background-color: $white;*/
     /*opacity: 0.5;*/
     z-index: 0;
     padding-left: 0;
     padding-right: 0; }
-  /* line 37, ../../source_sass/_intro.scss */
+  /* line 36, ../../source_sass/_intro.scss */
   #intro .flex-video {
+    background-color: black;
     position: relative;
     margin-bottom: 0;
     z-index: -1; }
