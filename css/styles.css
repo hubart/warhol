@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,100italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600italic,300italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-/*@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);*/
 /**
 *
 * Testing
@@ -43,13 +42,18 @@
 body {
   background-color: #000000;
   font-family: "Josefin Slab", serif; }
+  /* line 5, ../../source_sass/_main.scss */
+  body video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none; }
 
 /* line 1, ../../source_sass/_intro.scss */
 #intro {
   width: 100%;
   height: 100%;
-  margin-bottom: 10%; }
-  /* line 5, ../../source_sass/_intro.scss */
+  /*margin-bottom: 10%;*/
+  /*border-bottom: 100px solid black;*/ }
+  /* line 6, ../../source_sass/_intro.scss */
   #intro #intro-text {
     position: absolute;
     display: flex;
@@ -63,29 +67,29 @@ body {
     opacity: 0.8;
     font-family: "Open Sans Condensed", sans-serif; }
     @media (max-width: 639px) {
-      /* line 5, ../../source_sass/_intro.scss */
+      /* line 6, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 6em; } }
     @media (min-width: 640px) and (max-width: 1023px) {
-      /* line 5, ../../source_sass/_intro.scss */
+      /* line 6, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 14em; } }
     @media (min-width: 1024px) {
-      /* line 5, ../../source_sass/_intro.scss */
+      /* line 6, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 20em; } }
-    /* line 24, ../../source_sass/_intro.scss */
+    /* line 25, ../../source_sass/_intro.scss */
     #intro #intro-text span {
       transform: scale(1, 1.4);
       letter-spacing: -0.03em; }
-  /* line 29, ../../source_sass/_intro.scss */
+  /* line 30, ../../source_sass/_intro.scss */
   #intro .video-container {
-    background-color: #FFFFFF;
-    opacity: 0.5;
+    /*background-color: $white;*/
+    /*opacity: 0.5;*/
     z-index: 0;
     padding-left: 0;
     padding-right: 0; }
-  /* line 36, ../../source_sass/_intro.scss */
+  /* line 37, ../../source_sass/_intro.scss */
   #intro .flex-video {
     position: relative;
     margin-bottom: 0;
@@ -94,67 +98,229 @@ body {
 /* line 1, ../../source_sass/_carousel.scss */
 #carousel {
   width: 100%;
-  height: 400px;
   color: #FFFFFF; }
-  /* line 5, ../../source_sass/_carousel.scss */
+  @media (max-width: 639px) {
+    /* line 1, ../../source_sass/_carousel.scss */
+    #carousel {
+      height: 200px; } }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    /* line 1, ../../source_sass/_carousel.scss */
+    #carousel {
+      height: 400px; } }
+  @media (min-width: 1024px) {
+    /* line 1, ../../source_sass/_carousel.scss */
+    #carousel {
+      height: 500px; } }
+  /* line 13, ../../source_sass/_carousel.scss */
   #carousel #arrow-carousel-right {
     position: relative;
     top: 50%;
     transform: translate(0%, -50%); }
-  /* line 9, ../../source_sass/_carousel.scss */
+  /* line 17, ../../source_sass/_carousel.scss */
   #carousel #arrow-carousel-left {
     position: relative;
     top: 50%;
     transform: translate(0%, -100%); }
-  /* line 13, ../../source_sass/_carousel.scss */
+  /* line 21, ../../source_sass/_carousel.scss */
   #carousel .carousel-slides {
     display: none;
     position: relative;
-    height: 400px;
-    overflow: hidden; }
-    /* line 18, ../../source_sass/_carousel.scss */
+    overflow: hidden;
+    background-color: transparent;
+    color: #FFFFFF; }
+    @media (max-width: 639px) {
+      /* line 21, ../../source_sass/_carousel.scss */
+      #carousel .carousel-slides {
+        height: 200px; } }
+    @media (min-width: 640px) and (max-width: 1023px) {
+      /* line 21, ../../source_sass/_carousel.scss */
+      #carousel .carousel-slides {
+        height: 400px; } }
+    @media (min-width: 1024px) {
+      /* line 21, ../../source_sass/_carousel.scss */
+      #carousel .carousel-slides {
+        height: 500px; } }
+    /* line 36, ../../source_sass/_carousel.scss */
     #carousel .carousel-slides .carousel-content {
       font-style: italic;
-      font-weight: 100;
       text-align: right;
-      font-size: 3em;
       overflow: hidden;
-      /*http://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css*/
-      /*&:before {
-        content:                    '...';
-        text-align:                 right;
-        position:                   absolute;
-        display:                    block;
-        width:                      2em;
-        height:                     1em;
-        bottom:                     1em;
-        right:                      20px;
-        background: -moz-linear-gradient(left,  rgba(224,224,224,0) 0%, rgba(224,224,224,1) 38%, rgba(224,224,224,1) 99%);
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(224,224,224,0)), color-stop(38%,rgba(224,224,224,1)), color-stop(99%,rgba(224,224,224,1)));
-        background: -webkit-linear-gradient(left,  rgba(224,224,224,0) 0%,rgba(224,224,224,1) 38%,rgba(224,224,224,1) 99%);
-        background: -o-linear-gradient(left,  rgba(224,224,224,0) 0%,rgba(224,224,224,1) 38%,rgba(224,224,224,1) 99%);
-        background: -ms-linear-gradient(left,  rgba(224,224,224,0) 0%,rgba(224,224,224,1) 38%,rgba(224,224,224,1) 99%);
-        background: linear-gradient(to right,  rgba(224,224,224,0) 0%,rgba(224,224,224,1) 38%,rgba(224,224,224,1) 99%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e0e0e0', endColorstr='#e0e0e0',GradientType=1 );
-      }*/ }
-  /* line 44, ../../source_sass/_carousel.scss */
-  #carousel .carousel-blue {
-    background-color: blue;
-    color: #FFFFFF; }
+      position: relative;
+      top: 50%;
+      transform: translate(0%, -50%); }
+      @media (max-width: 639px) {
+        /* line 36, ../../source_sass/_carousel.scss */
+        #carousel .carousel-slides .carousel-content {
+          font-size: 1.2em;
+          font-weight: 600; } }
+      @media (min-width: 640px) and (max-width: 1023px) {
+        /* line 36, ../../source_sass/_carousel.scss */
+        #carousel .carousel-slides .carousel-content {
+          font-weight: 300;
+          font-size: 2.5em; } }
+      @media (min-width: 1024px) {
+        /* line 36, ../../source_sass/_carousel.scss */
+        #carousel .carousel-slides .carousel-content {
+          font-weight: 300;
+          font-size: 3em; } }
+  /* line 56, ../../source_sass/_carousel.scss */
+  #carousel img {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+    z-index: -10; }
+    @media (max-width: 639px) {
+      /* line 56, ../../source_sass/_carousel.scss */
+      #carousel img {
+        top: 15%; } }
+    @media (min-width: 640px) and (max-width: 1023px) {
+      /* line 56, ../../source_sass/_carousel.scss */
+      #carousel img {
+        top: -50%; } }
+    @media (min-width: 1024px) {
+      /* line 56, ../../source_sass/_carousel.scss */
+      #carousel img {
+        top: -15%; } }
+  /* line 72, ../../source_sass/_carousel.scss */
+  #carousel .arrow-carousel {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    /* line 74, ../../source_sass/_carousel.scss */
+    #carousel .arrow-carousel:hover {
+      cursor: pointer;
+      color: gray; }
+  /* line 79, ../../source_sass/_carousel.scss */
+  #carousel #arrow-carousel-right {
+    text-align: right; }
+  /* line 82, ../../source_sass/_carousel.scss */
+  #carousel .hide-arrow {
+    visibility: hidden; }
 
 /* line 2, ../../source_sass/_multi-column.scss */
 #multi-column div {
   padding-left: 0;
-  padding-right: 0; }
-  /* line 5, ../../source_sass/_multi-column.scss */
+  padding-right: 0;
+  position: relative; }
+  /* line 6, ../../source_sass/_multi-column.scss */
+  #multi-column div .video-filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /*height: 100%;*/
+    height: 100%;
+    z-index: 2; }
+  /* line 14, ../../source_sass/_multi-column.scss */
+  #multi-column div .filter-blue {
+    background-color: rgba(0, 0, 255, 0.7); }
+  /* line 17, ../../source_sass/_multi-column.scss */
+  #multi-column div .filter-green {
+    background-color: rgba(0, 255, 0, 0.7); }
+  /* line 20, ../../source_sass/_multi-column.scss */
+  #multi-column div .filter-red {
+    background-color: rgba(255, 0, 0, 0.7); }
+  /* line 23, ../../source_sass/_multi-column.scss */
+  #multi-column div .filter-yellow {
+    background-color: rgba(255, 255, 0, 0.7); }
+  /* line 26, ../../source_sass/_multi-column.scss */
   #multi-column div video {
     width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     height: auto;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     /* Safari and Chrome */
     -moz-transform: rotateY(180deg);
-    /* Firefox */ }
+    /* Firefox */
+    -webkit-filter: grayscale(1) brightness(1.5) contrast(10); }
+
+/* line 3, ../../source_sass/_modal.scss */
+#modal .columns {
+  padding: 0;
+  background-color: white; }
+/* line 7, ../../source_sass/_modal.scss */
+#modal .modal-container {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+  /* line 13, ../../source_sass/_modal.scss */
+  #modal .modal-container:hover {
+    cursor: pointer;
+    opacity: 0.5; }
+
+/* line 1, ../../source_sass/_lightbox.scss */
+#lightbox {
+  display: none;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%; }
+  /* line 7, ../../source_sass/_lightbox.scss */
+  #lightbox.show-lightbox {
+    display: block;
+    z-index: 1000; }
+  /* line 11, ../../source_sass/_lightbox.scss */
+  #lightbox #lightbox-transparent {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    opacity: .85;
+    filter: alpha(opacity=85); }
+  /* line 19, ../../source_sass/_lightbox.scss */
+  #lightbox #lightbox-hide {
+    position: absolute;
+    bottom: 90%;
+    width: 100px;
+    height: 100px;
+    z-index: 1003;
+    background: url("/data/images/cross_white.png") center center no-repeat;
+    -webkit-transition: background-image 0.1s;
+    -moz-transition: background-image 0.1s;
+    -ms-transition: background-image 0.1s;
+    -o-transition: background-image 0.1s;
+    transition: background-image 0.1s; }
+    @media (max-width: 639px) {
+      /* line 19, ../../source_sass/_lightbox.scss */
+      #lightbox #lightbox-hide {
+        left: 75%; } }
+    @media (min-width: 640px) and (max-width: 1023px) {
+      /* line 19, ../../source_sass/_lightbox.scss */
+      #lightbox #lightbox-hide {
+        left: 80%; } }
+    @media (min-width: 1024px) {
+      /* line 19, ../../source_sass/_lightbox.scss */
+      #lightbox #lightbox-hide {
+        left: 85%; } }
+    /* line 36, ../../source_sass/_lightbox.scss */
+    #lightbox #lightbox-hide:hover {
+      cursor: pointer;
+      background-image: url("/data/images/cross_grey.png"); }
+  /* line 41, ../../source_sass/_lightbox.scss */
+  #lightbox #lightbox-content {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 75%;
+    padding: 16px;
+    /*border: 10px solid black;*/
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1002;
+    overflow: auto; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
