@@ -19,14 +19,14 @@
     /* line 368, ../../source_sass/_media.scss */
     .include-media-test:before {
       content: ">small"; } }
-@media (min-width: 815px) and (max-width: 1023px) {
+@media (min-width: 815px) and (max-width: 1199px) {
   /* line 356, ../../source_sass/_media.scss */
   .include-media-test {
     background-color: #fed; }
     /* line 376, ../../source_sass/_media.scss */
     .include-media-test:before {
       content: ">=815px, <large"; } }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   /* line 356, ../../source_sass/_media.scss */
   .include-media-test {
     background-color: #fab; }
@@ -50,10 +50,8 @@ body {
 /* line 1, ../../source_sass/_intro.scss */
 #intro {
   width: 100%;
-  height: 100%;
-  /*margin-bottom: 10%;*/
-  /*border-bottom: 100px solid black;*/ }
-  /* line 6, ../../source_sass/_intro.scss */
+  height: 100%; }
+  /* line 4, ../../source_sass/_intro.scss */
   #intro #intro-text {
     position: absolute;
     display: flex;
@@ -66,48 +64,56 @@ body {
     color: #FFFFFF;
     opacity: 0.8;
     font-family: "Open Sans Condensed", sans-serif; }
-    @media (max-width: 639px) {
-      /* line 6, ../../source_sass/_intro.scss */
+    @media (max-width: 1023px) {
+      /* line 4, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 6em; } }
-    @media (min-width: 640px) and (max-width: 1023px) {
-      /* line 6, ../../source_sass/_intro.scss */
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      /* line 4, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 14em; } }
-    @media (min-width: 1024px) {
-      /* line 6, ../../source_sass/_intro.scss */
+    @media (min-width: 1200px) {
+      /* line 4, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 20em; } }
-    /* line 25, ../../source_sass/_intro.scss */
+    /* line 23, ../../source_sass/_intro.scss */
     #intro #intro-text span {
       transform: scale(1, 1.4);
       letter-spacing: -0.03em; }
-  /* line 30, ../../source_sass/_intro.scss */
+  /* line 28, ../../source_sass/_intro.scss */
   #intro .video-container {
     /*opacity: 0.5;*/
     z-index: 0;
     padding-left: 0;
     padding-right: 0; }
-  /* line 36, ../../source_sass/_intro.scss */
+  /* line 34, ../../source_sass/_intro.scss */
   #intro .flex-video {
     background-color: black;
     position: relative;
     margin-bottom: 0;
     z-index: -1; }
+  @media (max-width: 1399px) {
+    /* line 40, ../../source_sass/_intro.scss */
+    #intro .show-for-xlarge {
+      display: none; } }
+  @media (min-width: 1400px) {
+    /* line 40, ../../source_sass/_intro.scss */
+    #intro .show-for-xlarge {
+      display: block; } }
 
 /* line 1, ../../source_sass/_carousel.scss */
 #carousel {
   width: 100%;
   color: #FFFFFF; }
-  @media (max-width: 639px) {
+  @media (max-width: 1023px) {
     /* line 1, ../../source_sass/_carousel.scss */
     #carousel {
       height: 200px; } }
-  @media (min-width: 640px) and (max-width: 1023px) {
+  @media (min-width: 1024px) and (max-width: 1199px) {
     /* line 1, ../../source_sass/_carousel.scss */
     #carousel {
       height: 400px; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     /* line 1, ../../source_sass/_carousel.scss */
     #carousel {
       height: 500px; } }
@@ -128,15 +134,15 @@ body {
     overflow: hidden;
     background-color: transparent;
     color: #FFFFFF; }
-    @media (max-width: 639px) {
+    @media (max-width: 1023px) {
       /* line 21, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 200px; } }
-    @media (min-width: 640px) and (max-width: 1023px) {
+    @media (min-width: 1024px) and (max-width: 1199px) {
       /* line 21, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 400px; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       /* line 21, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 500px; } }
@@ -148,17 +154,17 @@ body {
       position: relative;
       top: 50%;
       transform: translate(0%, -50%); }
-      @media (max-width: 639px) {
+      @media (max-width: 1023px) {
         /* line 36, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-size: 1.2em;
           font-weight: 600; } }
-      @media (min-width: 640px) and (max-width: 1023px) {
+      @media (min-width: 1024px) and (max-width: 1199px) {
         /* line 36, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-weight: 300;
           font-size: 2.5em; } }
-      @media (min-width: 1024px) {
+      @media (min-width: 1200px) {
         /* line 36, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-weight: 300;
@@ -170,18 +176,18 @@ body {
     transform: translate(-50%, 0%);
     margin: 0 auto;
     z-index: -10; }
-    @media (max-width: 639px) {
+    @media (max-width: 1023px) {
       /* line 56, ../../source_sass/_carousel.scss */
       #carousel img {
         top: 15%; } }
-    @media (min-width: 640px) and (max-width: 1023px) {
+    @media (min-width: 1024px) and (max-width: 1199px) {
       /* line 56, ../../source_sass/_carousel.scss */
       #carousel img {
         top: -50%; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       /* line 56, ../../source_sass/_carousel.scss */
       #carousel img {
-        top: -15%; } }
+        top: -30%; } }
   /* line 72, ../../source_sass/_carousel.scss */
   #carousel .arrow-carousel {
     -webkit-transition: color 0.2s;
@@ -293,15 +299,15 @@ body {
     -ms-transition: background-image 0.1s;
     -o-transition: background-image 0.1s;
     transition: background-image 0.1s; }
-    @media (max-width: 639px) {
+    @media (max-width: 1023px) {
       /* line 19, ../../source_sass/_lightbox.scss */
       #lightbox #lightbox-hide {
         left: 75%; } }
-    @media (min-width: 640px) and (max-width: 1023px) {
+    @media (min-width: 1024px) and (max-width: 1199px) {
       /* line 19, ../../source_sass/_lightbox.scss */
       #lightbox #lightbox-hide {
         left: 80%; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       /* line 19, ../../source_sass/_lightbox.scss */
       #lightbox #lightbox-hide {
         left: 85%; } }
