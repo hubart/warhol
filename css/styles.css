@@ -63,6 +63,7 @@ body {
     height: 100%;
     color: #FFFFFF;
     opacity: 0.8;
+    z-index: 1;
     font-family: "Open Sans Condensed", sans-serif; }
     @media (max-width: 1023px) {
       /* line 4, ../../source_sass/_intro.scss */
@@ -76,28 +77,29 @@ body {
       /* line 4, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 20em; } }
-    /* line 23, ../../source_sass/_intro.scss */
+    /* line 24, ../../source_sass/_intro.scss */
     #intro #intro-text span {
       transform: scale(1, 1.4);
       letter-spacing: -0.03em; }
-  /* line 28, ../../source_sass/_intro.scss */
+  /* line 29, ../../source_sass/_intro.scss */
   #intro .video-container {
     /*opacity: 0.5;*/
+    -webkit-transform: translate3d(0, 0, 0);
     z-index: 0;
     padding-left: 0;
     padding-right: 0; }
-  /* line 34, ../../source_sass/_intro.scss */
+  /* line 36, ../../source_sass/_intro.scss */
   #intro .flex-video {
     background-color: black;
     position: relative;
     margin-bottom: 0;
     z-index: -1; }
   @media (max-width: 1399px) {
-    /* line 40, ../../source_sass/_intro.scss */
+    /* line 42, ../../source_sass/_intro.scss */
     #intro .show-for-xlarge {
       display: none; } }
   @media (min-width: 1400px) {
-    /* line 40, ../../source_sass/_intro.scss */
+    /* line 42, ../../source_sass/_intro.scss */
     #intro .show-for-xlarge {
       display: block; } }
 
@@ -190,19 +192,20 @@ body {
         top: -30%; } }
   /* line 72, ../../source_sass/_carousel.scss */
   #carousel .arrow-carousel {
+    font-style: normal;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
     -ms-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s; }
-    /* line 74, ../../source_sass/_carousel.scss */
+    /* line 75, ../../source_sass/_carousel.scss */
     #carousel .arrow-carousel:hover {
       cursor: pointer;
       color: gray; }
-  /* line 79, ../../source_sass/_carousel.scss */
+  /* line 80, ../../source_sass/_carousel.scss */
   #carousel #arrow-carousel-right {
     text-align: right; }
-  /* line 82, ../../source_sass/_carousel.scss */
+  /* line 83, ../../source_sass/_carousel.scss */
   #carousel .hide-arrow {
     visibility: hidden; }
 
@@ -220,17 +223,17 @@ body {
     height: 100%;
     z-index: 2; }
   /* line 14, ../../source_sass/_multi-column.scss */
-  #multi-column div .filter-blue {
-    background-color: rgba(0, 0, 255, 0.7); }
+  #multi-column div .filter-purple {
+    background-color: rgba(116, 74, 124, 0.8); }
   /* line 17, ../../source_sass/_multi-column.scss */
   #multi-column div .filter-green {
-    background-color: rgba(0, 255, 0, 0.7); }
+    background-color: rgba(0, 60, 0, 0.8); }
   /* line 20, ../../source_sass/_multi-column.scss */
   #multi-column div .filter-red {
-    background-color: rgba(255, 0, 0, 0.7); }
+    background-color: rgba(200, 0, 60, 0.8); }
   /* line 23, ../../source_sass/_multi-column.scss */
   #multi-column div .filter-yellow {
-    background-color: rgba(255, 255, 0, 0.7); }
+    background-color: rgba(210, 120, 0, 0.8); }
   /* line 26, ../../source_sass/_multi-column.scss */
   #multi-column div video {
     width: 100%;
@@ -242,10 +245,12 @@ body {
     -webkit-transform: rotateY(180deg);
     /* Safari and Chrome */
     -moz-transform: rotateY(180deg);
-    /* Firefox */
-    filter: grayscale(1) brightness(1.5) contrast(10);
-    -moz-filter: grayscale(1) brightness(1.5) contrast(10);
-    -webkit-filter: grayscale(1) brightness(1.5) contrast(10); }
+    /* Firefox */ }
+  /* line 36, ../../source_sass/_multi-column.scss */
+  #multi-column div .filter-overlay {
+    filter: grayscale(1) brightness(1.4) contrast(10);
+    -moz-filter: grayscale(1) brightness(1.4) contrast(10);
+    -webkit-filter: grayscale(1) brightness(1.4) contrast(10); }
 
 /* line 3, ../../source_sass/_modal.scss */
 #modal .columns {
@@ -289,7 +294,7 @@ body {
   /* line 19, ../../source_sass/_lightbox.scss */
   #lightbox #lightbox-hide {
     position: absolute;
-    bottom: 90%;
+    bottom: 85%;
     width: 100px;
     height: 100px;
     z-index: 1003;
