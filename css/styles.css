@@ -121,16 +121,6 @@ body {
     #carousel {
       height: 500px; } }
   /* line 13, ../../source_sass/_carousel.scss */
-  #carousel #arrow-carousel-right {
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -50%); }
-  /* line 17, ../../source_sass/_carousel.scss */
-  #carousel #arrow-carousel-left {
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -100%); }
-  /* line 21, ../../source_sass/_carousel.scss */
   #carousel .carousel-slides {
     display: none;
     position: relative;
@@ -138,18 +128,18 @@ body {
     background-color: transparent;
     color: #FFFFFF; }
     @media (max-width: 1023px) {
-      /* line 21, ../../source_sass/_carousel.scss */
+      /* line 13, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 200px; } }
     @media (min-width: 1024px) and (max-width: 1199px) {
-      /* line 21, ../../source_sass/_carousel.scss */
+      /* line 13, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 400px; } }
     @media (min-width: 1200px) {
-      /* line 21, ../../source_sass/_carousel.scss */
+      /* line 13, ../../source_sass/_carousel.scss */
       #carousel .carousel-slides {
         height: 500px; } }
-    /* line 36, ../../source_sass/_carousel.scss */
+    /* line 28, ../../source_sass/_carousel.scss */
     #carousel .carousel-slides .carousel-content {
       font-style: italic;
       text-align: right;
@@ -158,21 +148,21 @@ body {
       top: 50%;
       transform: translate(0%, -50%); }
       @media (max-width: 1023px) {
-        /* line 36, ../../source_sass/_carousel.scss */
+        /* line 28, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-size: 1.2em;
           font-weight: 600; } }
       @media (min-width: 1024px) and (max-width: 1199px) {
-        /* line 36, ../../source_sass/_carousel.scss */
+        /* line 28, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-weight: 300;
           font-size: 2.5em; } }
       @media (min-width: 1200px) {
-        /* line 36, ../../source_sass/_carousel.scss */
+        /* line 28, ../../source_sass/_carousel.scss */
         #carousel .carousel-slides .carousel-content {
           font-weight: 300;
           font-size: 3em; } }
-  /* line 56, ../../source_sass/_carousel.scss */
+  /* line 48, ../../source_sass/_carousel.scss */
   #carousel img {
     position: fixed;
     left: 50%;
@@ -180,33 +170,38 @@ body {
     margin: 0 auto;
     z-index: -10; }
     @media (max-width: 1023px) {
-      /* line 56, ../../source_sass/_carousel.scss */
+      /* line 48, ../../source_sass/_carousel.scss */
       #carousel img {
         top: 15%; } }
     @media (min-width: 1024px) and (max-width: 1199px) {
-      /* line 56, ../../source_sass/_carousel.scss */
+      /* line 48, ../../source_sass/_carousel.scss */
       #carousel img {
         top: -50%; } }
     @media (min-width: 1200px) {
-      /* line 56, ../../source_sass/_carousel.scss */
+      /* line 48, ../../source_sass/_carousel.scss */
       #carousel img {
         top: -30%; } }
-  /* line 72, ../../source_sass/_carousel.scss */
+  /* line 64, ../../source_sass/_carousel.scss */
   #carousel .arrow-carousel {
-    font-family: serif;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -105%);
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
     -ms-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s; }
-    /* line 75, ../../source_sass/_carousel.scss */
+    @media (max-width: 1023px) {
+      /* line 64, ../../source_sass/_carousel.scss */
+      #carousel .arrow-carousel {
+        font-size: 1.5em; } }
+    /* line 73, ../../source_sass/_carousel.scss */
     #carousel .arrow-carousel:hover {
       cursor: pointer;
       color: gray; }
-  /* line 80, ../../source_sass/_carousel.scss */
-  #carousel #arrow-carousel-right {
-    text-align: right; }
-  /* line 83, ../../source_sass/_carousel.scss */
+  /* line 79, ../../source_sass/_carousel.scss */
   #carousel .hide-arrow {
     visibility: hidden; }
 
