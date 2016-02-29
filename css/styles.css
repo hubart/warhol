@@ -1,6 +1,65 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600italic,300italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400);
+/* line 1, ../../source_sass/_navbar.scss */
+#navbar {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  font-family: "Open Sans Condensed", sans-serif;
+  /*height: 60px;
+  .title-bar {
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    width: 100%;
+    height: 100%;
+  }*/ }
+  /* line 7, ../../source_sass/_navbar.scss */
+  #navbar .title-bar {
+    text-align: right; }
+  /* line 10, ../../source_sass/_navbar.scss */
+  #navbar .top-bar, #navbar .menu {
+    opacity: 0.75; }
+    /* line 12, ../../source_sass/_navbar.scss */
+    #navbar .top-bar li, #navbar .menu li {
+      text-align: center; }
+  /* line 17, ../../source_sass/_navbar.scss */
+  #navbar a {
+    color: black; }
+  /* line 21, ../../source_sass/_navbar.scss */
+  #navbar #desktop-menu {
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1.4em;
+    -webkit-transition: height 0.3s, padding 0.3s, font-size 0.3s;
+    -moz-transition: height 0.3s, padding 0.3s, font-size 0.3s;
+    -ms-transition: height 0.3s, padding 0.3s, font-size 0.3s;
+    -o-transition: height 0.3s, padding 0.3s, font-size 0.3s;
+    transition: height 0.3s, padding 0.3s, font-size 0.3s; }
+    /* line 26, ../../source_sass/_navbar.scss */
+    #navbar #desktop-menu.navbar-shrink {
+      height: 3.5rem;
+      padding: 0.3rem;
+      font-size: 1.2em; }
+    /* line 32, ../../source_sass/_navbar.scss */
+    #navbar #desktop-menu li a {
+      color: black;
+      -webkit-transition: color 0.1s;
+      -moz-transition: color 0.1s;
+      -ms-transition: color 0.1s;
+      -o-transition: color 0.1s;
+      transition: color 0.1s; }
+      /* line 35, ../../source_sass/_navbar.scss */
+      #navbar #desktop-menu li a:hover {
+        color: #828282; }
+    /* line 39, ../../source_sass/_navbar.scss */
+    #navbar #desktop-menu li.navbar-active {
+      -webkit-box-shadow: inset 0px -2px 0px 0px black;
+      -moz-box-shadow: inset 0px -2px 0px 0px black;
+      box-shadow: inset 0px -2px 0px 0px black; }
+
 /**
 *
 * Testing
@@ -65,6 +124,7 @@ body {
     color: #FFFFFF;
     opacity: 0.8;
     z-index: 1;
+    font-weight: 700;
     font-family: "Open Sans Condensed", sans-serif; }
     @media (max-width: 1023px) {
       /* line 4, ../../source_sass/_intro.scss */
@@ -78,13 +138,12 @@ body {
       /* line 4, ../../source_sass/_intro.scss */
       #intro #intro-text {
         font-size: 20em; } }
-    /* line 24, ../../source_sass/_intro.scss */
+    /* line 25, ../../source_sass/_intro.scss */
     #intro #intro-text span {
       transform: scale(1, 1.4);
       letter-spacing: -0.03em; }
-  /* line 29, ../../source_sass/_intro.scss */
+  /* line 30, ../../source_sass/_intro.scss */
   #intro .video-container {
-    /*opacity: 0.5;*/
     -webkit-transform: translate3d(0, 0, 0);
     z-index: 0;
     padding-left: 0;
@@ -95,12 +154,20 @@ body {
     position: relative;
     margin-bottom: 0;
     z-index: -1; }
+  /* line 42, ../../source_sass/_intro.scss */
+  #intro img {
+    width: 100%; }
+  /* line 45, ../../source_sass/_intro.scss */
+  #intro img, #intro video {
+    /*trick computers to use GPU instead to render GIF*/
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0); }
   @media (max-width: 1399px) {
-    /* line 42, ../../source_sass/_intro.scss */
+    /* line 50, ../../source_sass/_intro.scss */
     #intro .show-for-xlarge {
       display: none; } }
   @media (min-width: 1400px) {
-    /* line 42, ../../source_sass/_intro.scss */
+    /* line 50, ../../source_sass/_intro.scss */
     #intro .show-for-xlarge {
       display: block; } }
 
