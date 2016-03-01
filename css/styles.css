@@ -51,14 +51,19 @@
       -ms-transition: color 0.1s;
       -o-transition: color 0.1s;
       transition: color 0.1s; }
-      /* line 35, ../../source_sass/_navbar.scss */
-      #navbar #desktop-menu li a:hover {
-        color: #828282; }
-    /* line 39, ../../source_sass/_navbar.scss */
+    /* line 37, ../../source_sass/_navbar.scss */
     #navbar #desktop-menu li.navbar-active {
       -webkit-box-shadow: inset 0px -2px 0px 0px black;
       -moz-box-shadow: inset 0px -2px 0px 0px black;
       box-shadow: inset 0px -2px 0px 0px black; }
+    /* line 41, ../../source_sass/_navbar.scss */
+    #navbar #desktop-menu li:hover.navbar-active {
+      -webkit-box-shadow: inset 0px -2px 0px 0px #828282;
+      -moz-box-shadow: inset 0px -2px 0px 0px #828282;
+      box-shadow: inset 0px -2px 0px 0px #828282; }
+    /* line 44, ../../source_sass/_navbar.scss */
+    #navbar #desktop-menu li:hover a {
+      color: #828282; }
 
 /**
 *
